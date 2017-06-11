@@ -31,8 +31,7 @@ void ISR_INTO()
  {
   TCCR2A=0x00;
   TCCR2B=0x07;   //the clock frequency source 1024 points
-  //TCNT2= 1000;    //10 ms overflow again
-  TCNT2= 100;
+  TCNT2= 1000;    //10 ms overflow again
   TIMSK2 = 0x01; //allow interrupt
  }
  int i=0;
@@ -40,7 +39,7 @@ void ISR_INTO()
 {
   
     //TCNT2=100;
-    TCNT2= 100;
+    TCNT2=100;
     flag++;
  if(flag==1)
   {
@@ -66,12 +65,11 @@ void ISR_INTO()
     Serial.println("\n"); 
     digitalWrite(s2,LOW);
     digitalWrite(s3,LOW);
-   delay(100000);
     }
     else if(flag==4)
      {
      flag=0;
-     
+        
      }
        counter=0;
 }
