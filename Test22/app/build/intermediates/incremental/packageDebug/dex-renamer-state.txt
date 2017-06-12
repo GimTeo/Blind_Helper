@@ -1,0 +1,7 @@
+#Mon Jun 12 13:57:55 KST 2017
+base.0=C\:\\Users\\ajou\\Downloads\\Test22\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_413c14cfb1d44bb65827e676325ee42846174eb0
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\ajou\\Downloads\\Test22\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_bfda392f43765d6da63abe39431ae6f69da8e6aa\\classes.dex
+base.1=C\:\\Users\\ajou\\Downloads\\Test22\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_bfda392f43765d6da63abe39431ae6f69da8e6aa
+file.0=C\:\\Users\\ajou\\Downloads\\Test22\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_413c14cfb1d44bb65827e676325ee42846174eb0\\classes.dex
