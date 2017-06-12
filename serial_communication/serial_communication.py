@@ -1,9 +1,10 @@
 
 import serial
 import SocketServer 
-import socket
+from socket import * 
+from select import * 
 import sys
-from time import ctime
+import time
 from threading import Thread
 
 ser = serial.Serial()
@@ -27,102 +28,118 @@ serverSocket.bind(ADDR)
 serverSocket.listen(10)
 connection_list = [serverSocket]
 
+cnt=0
+traffic_color=""
+temp_color=""
+flag =0
+send_flag =0
 
-
-def color_detect(red, green, blue):
+def color_detect(red_val, green_val, blue_val):
     #print("red %d" %int(red))
     #print("green %d" %int(green))
     #print("blue %d" %int(blue))
     color=""
-    if (red > green and red > blue):
+    red = int(red_val)
+    blue = int(blue_val)
+    green = int(green_val)
+    if (red < green and red < blue):
         #print("red")
         color = "red"
-    if (green > red and green > blue):
+    if (green < red and green < blue):
         #print("green")
         color = "green"
-    if (blue > red and blue > green):
+    if (blue < red and blue < green):
         #print("blue")
         color = "green"
     return color
 
-cnt=0
-green=""
-blue=""
-red=""
-traffic_color=""
-temp_color=""
-flag =0
-
 
 def get_traffic_light():
+    global cnt
+    global flag
+    global traffic_color
+    global temp_color
+    global send_flag
+    green_val=""
+    blue_val=""
+    red_val=""
+    print("start sensing")
     while(True):
         if(ser.inWaiting() > 0):
             obj = ser.readline()
             str = obj[:-2].decode()
-            #print type(str)
+            #print (str)
             if str[0:3] == "red":
-                red = str[3:]
-                #print(red)
+                red_val = int(str[3:])
+                #print(str[0:3] , red_val)
+                #print type(red_val)
                 cnt += 1
-            if str[0:4] == "blue":
-                blue = str[4:]
-                #print(blue)
+            elif str[0:5] == "green":
+                green_val = int(str[5:])
+                #print(str[0:5], green_val)
                 cnt += 1
-            if str[0:5] == "green":
-                green = str[5:]
-                #print(green)
+            elif str[0:4] == "blue":
+                blue_val = int(str[4:])
+                #print(str[0:4],blue_val)
                 cnt += 1
-            #print len(green) >0
-            #print len(blue) >0
+                if(cnt != 3):
+                    cnt =0
+                    print(cnt)
+
             if (cnt ==3):
+                #print("flag =0")
                 if(flag ==0):
-                    temp_color ,traffic_color= color_detect(red, green, blue)
-                    flag =1
-                temp_color = color_detect(red, green, blue)
-                green=""
-                blue=""
-                red=""
-                cnt=0
-                if(temp_color != traffic_color):
+                    temp_color = color_detect(red_val, green_val, blue_val)
                     traffic_color = temp_color
-                    print("color change to %s" %traffic_color)
+                    flag =1
+                if(green_val >0) | (red_val >0) | (blue_val >0):
+                    temp_color = color_detect(red_val, green_val, blue_val)
+                    #print(temp_color)
+                    if(temp_color != traffic_color):
+                        traffic_color = temp_color
+                        print("color change to %s" %traffic_color)
+                        send_flag =1
+                    green_val=""
+                    blue_val=""
+                    red_val=""
+                    cnt=0
+
+    
 
 
-'''
+
 def server():
+    global send_flag
+    global traffic_color
+    print('==============================================')
+    print('waiting cli')
+    print('==============================================')
     while connection_list:
         try:
-            print('==============================================')
-            print('waiting cli')
-            print('==============================================')
-
-            # select 로 요청을 받고, 10초마다 블럭킹을 해제하도록 함
+            if(send_flag ==1): 
+                print("ccccc")
+            print ('[INFO] waiting request...')
             read_socket, write_socket, error_socket = select(connection_list, [], [], 10)
 
             for sock in read_socket:
-                # 새로운 접속
                 if sock == serverSocket:
                     clientSocket, addr_info = serverSocket.accept()
                     connection_list.append(clientSocket)
                     print('[INFO][%s] client(%s)is connected.' % (ctime(), addr_info[0]))
 
                
-                # 접속한 사용자(클라이언트)로부터 새로운 데이터 받음
                 else:
                     data = sock.recv(BUFSIZE)
-                    if data:
-                        print('[INFO][%s] messege from client.' % ctime())
-                        #print("client : %s" , % data)
-                        for socket_in_list in connection_list:
-                            if socket_in_list != serverSocket and socket_in_list != sock:
-                                try:
-                                    socket_in_list.send('[%s] %s' % (ctime(), data))
-                                    print('[INFO][%s] data is sended to client.' % ctime())
-                                except Exception as e:
-                                    print(e.message)
-                                    socket_in_list.close()
-                                    connection_list.remove(socket_in_list)
-                                    continue
+                    if (data == "START") | (data == "START\n"):
+                        print('[INFO][%s] start messege from client.' % ctime())
+
+                        while(True):
+                            if (send_flag ==1):
+                                sock.send(traffic_color)
+                            send_flag =0
+                            if (data == "END") | (data == "END\n"):
+                                break
+
                     else:
                         connection_list.remove(sock)
                         sock.close()
@@ -131,12 +148,13 @@ def server():
             serverSocket.close()
             sys.exit()
 
-            '''
+   
 
 t1 = Thread(target = get_traffic_light)
 t2 = Thread(target = server)
 
-t1.start
+t1.start()
+t2.start()
 
         
 

@@ -2,7 +2,7 @@ int s0=3,s1=4,s2=5,s3=6;
 int out=2;
 int flag=0;
 byte counter=0;
-byte countR=0,countG=0,countB=0;
+int countR=0,countG=0,countB=0;
 void setup()
  {
  Serial.begin(9600);
@@ -62,14 +62,13 @@ void ISR_INTO()
     countB=counter;
     Serial.print("blue");
     Serial.println(countB);
-    Serial.println("\n"); 
     digitalWrite(s2,LOW);
     digitalWrite(s3,LOW);
     }
     else if(flag==4)
      {
      flag=0;
-        
+         
      }
        counter=0;
 }
