@@ -1,0 +1,99 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\USER\AndroidStudioProjects\BlindHelper_test4\app\src\main\AndroidManifest.xml:2:1-30:12
+	package
+		ADDED from C:\Users\USER\AndroidStudioProjects\BlindHelper_test4\app\src\main\AndroidManifest.xml:3:5-38
+		INJECTED from C:\Users\USER\AndroidStudioProjects\BlindHelper_test4\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\USER\AndroidStudioProjects\BlindHelper_test4\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Users\USER\AndroidStudioProjects\BlindHelper_test4\app\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from C:\Users\USER\AndroidStudioProjects\BlindHelper_test4\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\USER\AndroidStudioProjects\BlindHelper_test4\app\src\main\AndroidManifest.xml
+	android:versionCode
+		ADDED from C:\Users\USER\AndroidStudioProjects\BlindHelper_test4\app\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from C:\Users\USER\AndroidStudioProjects\BlindHelper_test4\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\USER\AndroidStudioProjects\BlindHelper_test4\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\USER\AndroidStudioProjects\BlindHelper_test4\app\src\main\AndroidManifest.xml:2:11-69
+uses-sdk
+ADDED from C:\Users\USER\AndroidStudioProjects\BlindHelper_test4\app\src\main\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\USER\.android\build-cache\0631ae437d0d5c38334ebed50662e353ef57a9f8\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\USER\.android\build-cache\4c10d1c8264be27f1333b5f9dc5c05003f010bf8\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\USER\.android\build-cache\3afbd8dbf6a61b1afd8412249541448ae4739025\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\USER\.android\build-cache\f144aa2f7ae85dd7e4d4f9ef2136dbd12a797f6b\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\USER\.android\build-cache\5af9bb2cb694d97f0a5c3b8e3f3e38616dae6a33\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\USER\.android\build-cache\465c3e5624e5139e75e2b80bcb829f70180ca18a\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\USER\.android\build-cache\3770e80dba515e2bab1741eb85a92a8e7cb644a8\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\USER\.android\build-cache\f0415ddd154493f5cbae85f8880096be9d167af4\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\USER\.android\build-cache\99c6c3165a91013318eeb0a2ded75232dad5b37f\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\USER\.android\build-cache\82902862f59e09456878d3c9a0543b706182556a\output\AndroidManifest.xml:5:5-7:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\USER\.android\build-cache\0631ae437d0d5c38334ebed50662e353ef57a9f8\output\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		ADDED from C:\Users\USER\AndroidStudioProjects\BlindHelper_test4\app\src\main\AndroidManifest.xml:9:9-38
+		INJECTED from C:\Users\USER\AndroidStudioProjects\BlindHelper_test4\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\USER\AndroidStudioProjects\BlindHelper_test4\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from C:\Users\USER\AndroidStudioProjects\BlindHelper_test4\app\src\main\AndroidManifest.xml:8:9-35
+		INJECTED from C:\Users\USER\AndroidStudioProjects\BlindHelper_test4\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\USER\AndroidStudioProjects\BlindHelper_test4\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\USER\AndroidStudioProjects\BlindHelper_test4\app\src\main\AndroidManifest.xml:11:5-66
+	android:name
+		ADDED from C:\Users\USER\AndroidStudioProjects\BlindHelper_test4\app\src\main\AndroidManifest.xml:11:22-64
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from C:\Users\USER\AndroidStudioProjects\BlindHelper_test4\app\src\main\AndroidManifest.xml:12:5-70
+	android:name
+		ADDED from C:\Users\USER\AndroidStudioProjects\BlindHelper_test4\app\src\main\AndroidManifest.xml:12:22-68
+application
+ADDED from C:\Users\USER\AndroidStudioProjects\BlindHelper_test4\app\src\main\AndroidManifest.xml:14:5-28:19
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\USER\.android\build-cache\0631ae437d0d5c38334ebed50662e353ef57a9f8\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\USER\.android\build-cache\4c10d1c8264be27f1333b5f9dc5c05003f010bf8\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\USER\.android\build-cache\3afbd8dbf6a61b1afd8412249541448ae4739025\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\USER\.android\build-cache\f144aa2f7ae85dd7e4d4f9ef2136dbd12a797f6b\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\USER\.android\build-cache\5af9bb2cb694d97f0a5c3b8e3f3e38616dae6a33\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\USER\.android\build-cache\465c3e5624e5139e75e2b80bcb829f70180ca18a\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\USER\.android\build-cache\3770e80dba515e2bab1741eb85a92a8e7cb644a8\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\USER\.android\build-cache\f0415ddd154493f5cbae85f8880096be9d167af4\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\USER\.android\build-cache\99c6c3165a91013318eeb0a2ded75232dad5b37f\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\USER\.android\build-cache\82902862f59e09456878d3c9a0543b706182556a\output\AndroidManifest.xml:9:5-20
+	android:label
+		ADDED from C:\Users\USER\AndroidStudioProjects\BlindHelper_test4\app\src\main\AndroidManifest.xml:17:9-41
+	android:supportsRtl
+		ADDED from C:\Users\USER\AndroidStudioProjects\BlindHelper_test4\app\src\main\AndroidManifest.xml:19:9-35
+	android:roundIcon
+		ADDED from C:\Users\USER\AndroidStudioProjects\BlindHelper_test4\app\src\main\AndroidManifest.xml:18:9-54
+	android:allowBackup
+		ADDED from C:\Users\USER\AndroidStudioProjects\BlindHelper_test4\app\src\main\AndroidManifest.xml:15:9-35
+	android:icon
+		ADDED from C:\Users\USER\AndroidStudioProjects\BlindHelper_test4\app\src\main\AndroidManifest.xml:16:9-43
+	android:theme
+		ADDED from C:\Users\USER\AndroidStudioProjects\BlindHelper_test4\app\src\main\AndroidManifest.xml:20:9-40
+activity#team4.blindhelper_test4.MainActivity
+ADDED from C:\Users\USER\AndroidStudioProjects\BlindHelper_test4\app\src\main\AndroidManifest.xml:21:9-27:20
+	android:name
+		ADDED from C:\Users\USER\AndroidStudioProjects\BlindHelper_test4\app\src\main\AndroidManifest.xml:21:19-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\USER\AndroidStudioProjects\BlindHelper_test4\app\src\main\AndroidManifest.xml:22:13-26:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\USER\AndroidStudioProjects\BlindHelper_test4\app\src\main\AndroidManifest.xml:23:17-69
+	android:name
+		ADDED from C:\Users\USER\AndroidStudioProjects\BlindHelper_test4\app\src\main\AndroidManifest.xml:23:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\USER\AndroidStudioProjects\BlindHelper_test4\app\src\main\AndroidManifest.xml:25:17-77
+	android:name
+		ADDED from C:\Users\USER\AndroidStudioProjects\BlindHelper_test4\app\src\main\AndroidManifest.xml:25:27-74
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\USER\.android\build-cache\0631ae437d0d5c38334ebed50662e353ef57a9f8\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\USER\.android\build-cache\4c10d1c8264be27f1333b5f9dc5c05003f010bf8\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\USER\.android\build-cache\3afbd8dbf6a61b1afd8412249541448ae4739025\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\USER\.android\build-cache\f144aa2f7ae85dd7e4d4f9ef2136dbd12a797f6b\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\USER\.android\build-cache\5af9bb2cb694d97f0a5c3b8e3f3e38616dae6a33\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\USER\.android\build-cache\465c3e5624e5139e75e2b80bcb829f70180ca18a\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\USER\.android\build-cache\3770e80dba515e2bab1741eb85a92a8e7cb644a8\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\USER\.android\build-cache\f0415ddd154493f5cbae85f8880096be9d167af4\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\USER\.android\build-cache\99c6c3165a91013318eeb0a2ded75232dad5b37f\output\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\USER\.android\build-cache\0631ae437d0d5c38334ebed50662e353ef57a9f8\output\AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\USER\.android\build-cache\0631ae437d0d5c38334ebed50662e353ef57a9f8\output\AndroidManifest.xml:26:9-47

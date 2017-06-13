@@ -1,0 +1,7 @@
+#Mon Jun 12 22:45:55 KST 2017
+base.0=C\:\\Users\\USER\\AndroidStudioProjects\\BlindHelper_test4\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_3b6be108900a0c33e9cf865f06d3218de6f57a23
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\USER\\AndroidStudioProjects\\BlindHelper_test4\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_131cb75d8a4e0ee77b3513211c1398bc9feec9ac\\classes.dex
+base.1=C\:\\Users\\USER\\AndroidStudioProjects\\BlindHelper_test4\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_131cb75d8a4e0ee77b3513211c1398bc9feec9ac
+file.0=C\:\\Users\\USER\\AndroidStudioProjects\\BlindHelper_test4\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_3b6be108900a0c33e9cf865f06d3218de6f57a23\\classes.dex
