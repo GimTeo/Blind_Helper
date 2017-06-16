@@ -88,7 +88,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
 
 
-        tc = new TcpClient("192.168.42.139", 8001);
+        tc = new TcpClient("192.168.43.45", 8001);
 
 
         cLatLng = new CurLatLng(0.0, 0.0, new CurLatLng.ChangeListener() {
@@ -199,7 +199,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                                 }
 
 
-                                myTTS.speak("현재 위치"+ curLocAddr + "좌표는 경도"+curLatLng.latitude+ " 위도"+curLatLng.longitude+ "입니다.", QUEUE_ADD, null, "curLoc");
+                                myTTS.speak("현재 위치, "+ curLocAddr + ", 좌표는 경도"+curLatLng.latitude+ " 위도"+curLatLng.longitude+ "입니다.", QUEUE_ADD, null, "curLoc");
                                 Log.i("Location", curLatLng.latitude + " " + curLatLng.longitude);
 
                                 cLatLng.setLatLng(curLatLng.latitude, curLatLng.longitude);
@@ -229,7 +229,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         myTTS.speak("목적지는" + DEST, QUEUE_ADD, null, "dest");
         myTTS.speak("경로를 탐색합니다.", QUEUE_ADD, null, "dest");
 
-        String endName = "삼가동 진우아파트";
+        String endName = DEST;
         GoogleGeoRequest ggr = new GoogleGeoRequest(endName);
         ggr.addr2co.start();
 
@@ -247,7 +247,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         myTTS.speak("경로를 안내합니다.", QUEUE_ADD, null, "dest");
 
 
-        TmapHttpReq thr = new TmapHttpReq("http://apis.skplanetx.com/tmap/routes?version=1&callback=%22%22&" +
+        TmapHttpReq thr = new TmapHttpReq("http://apis.skplanetx.com/tmap/routes/pedestrian?version=1&callback=%22%22&" +
                 "startX="+Double.toString(curLatLng.longitude) +
                 "&startY="+Double.toString(curLatLng.latitude) +
                 "&endX=" +Double.toString(destLatLng.longitude)+
@@ -292,7 +292,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 map.clear();
                 map.animateCamera(CameraUpdateFactory.newLatLng(latLng));
                 map.addMarker(markerOptions);
-                tc.sendSTOP();
+                //tc.sendSTOP();
 
             }
 
