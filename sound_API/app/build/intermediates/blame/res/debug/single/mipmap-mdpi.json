@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\BlindHelper_test4\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher_round.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\BlindHelper_test4\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\BlindHelper_test4\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\BlindHelper_test4\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    }
+]
